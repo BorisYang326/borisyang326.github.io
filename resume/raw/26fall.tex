@@ -1,0 +1,292 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+% \usepackage{fontspec}
+\usepackage{xeCJK}
+% \usepackage{libertine}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+% \input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+% \addtolength{\oddsidemargin}{-0.6in}
+% \addtolength{\evensidemargin}{-0.5in}
+% \addtolength{\textwidth}{1.19in}
+% \addtolength{\topmargin}{-.7in}
+% \addtolength{\textheight}{1.4in}
+\addtolength{\oddsidemargin}{-0.35in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{0.7in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+% \pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-3pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeadingLarge}[2]{
+    \item
+    \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+% \begin{center}
+{\huge \textbf{Bo Yang (楊博)}} \\ \vspace{6pt}
+\small  
+\href{https://borisyang326.github.io/}{\raisebox{-0.2\height}\faHome\  \underline{https://borisyang326.github.io/}} ~
+% \raisebox{-0.1\height}\faPhone\ (+86) 186-2115-3201 ~
+\href{mailto:borisyang326@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{yangbo2022@shanghaitech.edu.cn}} ~ 
+\href{https://github.com/BorisYang326}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/BorisYang326}}
+\vspace{-2pt}
+% \end{center}
+
+
+%-----------EDUCATION-----------
+\section{\textsc{Education (in chronological order)}}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+      {ShanghaiTech University}{Sep. 2018 -- Jun 2022}
+      {Bachelor of Science in Computer Science, GPA 3.32/4.0}{Shanghai, China}
+  \resumeSubheading
+      {University of California, Berkeley}{Jul. 2019 -- Aug 2019}
+      {ShanghaiTech‑UC Berkeley Summer School Exchange Program, GPA 4.0/4.0}{Berkeley, California, US}
+    
+    \resumeSubheading
+      {ShanghaiTech University}{Sep. 2022 -- Dec. 2025 (Expected)}
+      {Master of Science in Computer Science, GPA 3.84/4.0}{Shanghai, China}
+      \item \small{\textit{Advisor: \href{https://www.ying-cao.com/}{Prof.Ying Cao}}}
+    
+  \resumeSubHeadingListEnd
+  \vspace{-12pt}
+
+%------RESEARCH INTERESTS-------
+\section{Research Interests}
+    %\resumeSubHeadingListStart
+    \qquad Graphic Design Generation; Computer Graphics; Generative Model
+    %\resumeSubHeadingListEnd
+    \vspace{-6pt}
+
+%------RELEVANT COURSEWORK-------
+\section{Relevant Coursework}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{2}
+            \begin{itemize}[itemsep=-3pt, parsep=3pt]
+                \item\small Deep Learning (4.0/4.0)
+                \item\small Project Practice for Deep Learning (4.0/4.0)
+                \item Algorithm Design and Analysis (4.0/4.0)
+                \item Computer Vision II (3.7/4.0)
+                \item Natural Language Processing (3.7/4.0)
+                
+            \end{itemize}
+        \end{multicols}
+        % \vspace*{2.0\multicolsep}
+        \vspace{-2pt}
+    %\resumeSubHeadingListEnd
+
+% %-----------PUBLICATION-----------
+\section{Publication}
+    \resumeItemListStart
+      \resumeItem{\textbf{Order Matters: Learning Element Ordering for Graphic Design Generation} \\
+      \vspace{2pt}
+      \textbf{Bo Yang}, Ying Cao \\
+      \vspace{2pt}
+      ACM SIGGRAPH 2025 \textbf{(Journal Track)} \\
+      \vspace{2pt}
+      Develop a method to optimize the ordering of graphic elements to improve the performance of generative models of graphic designs.
+      
+      }
+    \resumeItemListEnd
+    
+\vspace{-6pt}
+
+%-----------PROJECTS-----------
+\section{Research Projects}
+    % % \vspace{-5pt}
+    % \resumeSubHeadingListStart
+    %   \resumeProjectHeading
+    %   {Learning Element Ordering for Design Template Generation}{January 2023 -- Present}
+    %       \resumeItemListStart
+    %         \resumeItem{Proposed a novel training pipeline for coordinating learning element ordering within a design template generation task.}
+    %         \resumeItem{Completed the first draft version and scheduled the submission for SIGGRAPH Asia 2024.}
+    %       \resumeItemListEnd
+    % \resumeSubHeadingListEnd
+    \resumeSubHeadingListStart
+    \resumeProjectHeadingLarge{Editable Vector Design Generation from Text}{Jul 2024 -- Mar 2025}
+          \resumeItemListStart
+            \resumeItem{Proposed an end-to-end framework for text-to-vector-design generation, including a novel dataset with authentic design intentions and a reliable evaluation metric}
+            \resumeItem{Submitted to ICCV 2025, second author. }
+          \resumeItemListEnd
+    \resumeProjectHeadingLarge{Text-guided Saliency Prediction for Graphic Design}{Jul 2023 -- Jan 2024}
+          \resumeItemListStart
+            \resumeItem{Propose a weakly supervised learning method for predicting saliency maps on graphic designs using natural language supervision}
+            \resumeItem{Submitted to ICCV 2025, third student author. }
+          \resumeItemListEnd
+    
+     \resumeSubHeadingListEnd
+\vspace{-6pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {VRVC-Lab, ShanghaiTech University}{Jan 2022 -- Sep 2022}
+      {Research Intern, Supervised by \href{http://www.yu-jingyi.com/}{Prof.Jingyi Yu} and \href{https://www.xu-lan.com/}{Prof.Lan Xu}}{Shanghai, China}
+      \resumeItemListStart
+        \resumeItem{Contributed to two paper for SIGGRAPH 2022 and SIGGRAPH Asia 2022, responsible for designing and rendering figures for the paper and producing demonstration videos.}
+      \resumeItemListEnd
+
+  % \resumeSubheading
+  %     {NeuDim Digital Technology Inc.}{Jul 2022 -- Sep 2022}
+  %     {Graphic Design Intern}{Shanghai, China}
+  %     \resumeItemListStart
+  %       \resumeItem{Designed the initial logo and the official website layout/style for the company during its early stages.}
+  %       \resumeItem{Created the graphical user interface (GUI) for the company's first scan and reconstruction software for PC platforms.}
+  % \resumeItemListEnd
+
+    \resumeSubheading
+      {Shanghai BnZ Animation Studio}{Sep 2022 -- Present}
+      {Co-founder}{Shanghai, China}
+      \resumeItemListStart
+        \resumeItem{Founded a studio dedicated to providing scientific visualization through graphic design, animations, and videos.}
+        \resumeItem{Designed over 50 animations and videos for research entities such as \href{https://www.microsate.com/}{\textit{IAMCAS}} and \href{https://pubs.acs.org/journal/amrcda}{\textit{the Journal of AMR}}.}
+  \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-6pt}
+
+% %-----------EXPERIENCE-----------
+% \section{Teaching Experience}
+%   \begin{itemize}[itemsep=-3pt, parsep=3pt]
+%                 \item\small CS280 Deep Learning Spring 23, Head Teaching Assistant
+%                 \item CS280 Deep Learning Spring 23, Teaching Assistant
+%                 \item CS280 Deep Learning Spring 23, Head Teaching Assistant
+                
+%             \end{itemize}
+% \vspace{-14pt}
+
+%-----------AWARDS-----------
+\section{Awards}
+\resumeItemListStart
+\itemsep -0pt
+\resumeItem{\textit{\textbf{Merit Student}} of ShanghaiTech University (\textbf{top 10\%})}\hfill{\textit{Dec 2023}}
+\resumeItem{\textit{\textbf{Outstanding Teaching Assistant}} in SIST, ShanghaiTech University} \hfill{\textit{Nov 2023/Nov 2024}}
+\resumeItemListEnd
+\vspace{-6pt}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming}{: C, C++, Python(Pytorch), MATLAB, Linux, \LaTeX} \\
+     \textbf{Languages}{: Mandarin Chinese(Native), English(Fluent)}
+    }}
+ \end{itemize}
+ \vspace{-6pt}
+
+\end{document}
