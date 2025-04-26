@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Order Matters: Learning Element Ordering for Graphic Design Generation">
+  <meta name="keywords" content="graphic design, deep learning, generative models, transformer, neural order">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Order Matters: Learning Element Ordering for Graphic Design Generation</title>
+
+  <!-- Fonts and Styles -->
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+  
+  <!-- Bulma CSS Framework -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  
+  <!-- MathJax -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  
+  <style>
+    .publication-title {
+      font-family: 'Google Sans', sans-serif;
+    }
+    .publication-authors {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    .publication-links {
+      margin-top: 2rem;
+    }
+    .link-block {
+      margin-right: 1rem;
+    }
+    .teaser-image {
+      width: 100%;
+      max-width: 800px;
+      margin: 20px auto;
+      display: block;
+    }
+    .results-image {
+      width: 100%;
+      max-width: 1000px;
+      margin: 20px auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Order Matters: Learning Element Ordering for Graphic Design Generation</h1>
+          <div class="publication-venue" style="font-size: 1.5rem; color: #666; font-style: italic; margin: 1rem 0;">
+            ACM Trans. on Graphics (Proc. ACM SIGGRAPH 2025)
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+                <a href="https://borisyang326.github.io">Bo Yang</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://www.ying-cao.com/">Ying Cao</a><sup>1</sup></span>
+              <span class="author-block">
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>ShanghaiTech University</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- Paper Link -->
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Code Link -->
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code(Coming Soon)</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Teaser -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="project/ordermatters/figs/teaser_v5.jpg" alt="Project Teaser" class="teaser-image">
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            The past few years have witnessed an emergent interest in building generative models for the graphic design domain. 
+            For adoption of powerful deep generative models with Transformer-based neural backbones, prior approaches formulate designs as ordered sequences of elements, 
+            and simply order the elements in a random or raster manner. We argue that such naive ordering methods are sub-optimal and there is room for improving sample 
+            quality through a better choice of order between graphic design elements.
+          </p>
+          <p>
+            In this paper, we seek to explore the space of orderings to find the ordering strategy that optimizes the performance of graphic design generation models. 
+            For this, we propose a model, namely <strong>G</strong>enerative <strong>O</strong>rder <strong>L</strong>earner (GOL), which trains an autoregressive 
+            generator on design sequences, jointly with an ordering network that sort design elements to maximize the generation quality.
+          </p>
+          <p>
+            With unsupervised training on vector graphic design data, our model is capable of learning a content-adaptive ordering approach, called neural order. 
+            Our experiments show that the generator trained with our neural order converges faster, achieving remarkably improved generation quality compared with 
+            using alternative ordering baselines. We conduct comprehensive analysis of our learned order to have a deeper understanding of its ordering behaviors. 
+            In addition, our learned order can generalize well to diffusion-based generative models and help design generators scale up excellently.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Results -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Results</h2>
+        <div class="content has-text-centered">
+          <img src="project/ordermatters/figs/results-v3.jpg" alt="Visual Results" class="results-image">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content has-text-centered">
+          <p>
+            Project page inspired by <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> website. We thank the authors for sharing the source code.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
