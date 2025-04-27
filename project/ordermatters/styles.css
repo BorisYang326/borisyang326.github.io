@@ -1,0 +1,166 @@
+body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.hero-body {
+    padding: 0 0;
+    width: 100%;
+}
+
+.container.is-max-desktop {
+    max-width: 1200px;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.column.is-four-fifths {
+    width: 100%;
+    padding: 0;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.publication-title {
+    font-family: 'Google Sans', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.publication-title span {
+    width: 100%;
+    text-align: center;
+}
+
+.publication-venue {
+    margin: 0.5rem 0 !important;
+    color: #666;
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+.publication-authors {
+    margin: 0.5rem 0;
+}
+
+.author-block {
+    font-size: 25px;
+}
+
+.author-block a {
+    color: #000;
+    text-decoration: none;
+    position: relative;
+}
+
+.author-block a:hover {
+    color: #000;
+}
+
+.author-block a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #f14d68;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.author-block a:hover::after {
+    transform: scaleX(1);
+}
+
+.institution-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+    width: 900px;
+    padding-right: 30px;
+}
+
+.institution-logos span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.institution-logos sup {
+    margin-top: 5px;
+}
+
+.publication-links {
+    margin-top: 1.5rem;
+    padding-left: 0px;
+}
+
+.link-block {
+    margin: 0 0.5rem;
+}
+
+.external-link.button {
+    background-color: #222;
+    color: white;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.external-link.button:hover {
+    background-color: #222;
+    color: #f14d68;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    margin: 2rem 0;
+}
+
+.teaser-image {
+    width: 100%;
+    max-width: 1200px;
+    margin: 10px auto;
+    display: block;
+    padding-top: 10px;
+}
+
+.section-title {
+    text-align: center !important;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.footer {
+    background-color: transparent;
+    padding: 2rem 0;
+}
+
+.corresponding-note {
+    display: block;
+    font-size: 1rem;
+    color: #666;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+} 

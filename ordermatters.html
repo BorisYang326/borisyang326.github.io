@@ -22,33 +22,8 @@
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   
-  <style>
-    .publication-title {
-      font-family: 'Google Sans', sans-serif;
-    }
-    .publication-authors {
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-    }
-    .publication-links {
-      margin-top: 2rem;
-    }
-    .link-block {
-      margin-right: 1rem;
-    }
-    .teaser-image {
-      width: 100%;
-      max-width: 800px;
-      margin: 20px auto;
-      display: block;
-    }
-    .results-image {
-      width: 100%;
-      max-width: 1000px;
-      margin: 20px auto;
-      display: block;
-    }
-  </style>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="project/ordermatters/styles.css">
 </head>
 <body>
 
@@ -57,45 +32,43 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Order Matters: Learning Element Ordering for Graphic Design Generation</h1>
-          <div class="publication-venue" style="font-size: 1.5rem; color: #666; font-style: italic; margin: 1rem 0;">
+          <h1 class="title is-1 publication-title">
+            <span>Order Matters: Learning Element Ordering</span>
+            <span>for Graphic Design Generation</span>
+          </h1>
+          <div class="publication-venue">
             ACM Trans. on Graphics (Proc. ACM SIGGRAPH 2025)
           </div>
-          <div class="is-size-5 publication-authors">
+          <div class="publication-authors">
             <span class="author-block">
                 <a href="https://borisyang326.github.io">Bo Yang</a><sup>1</sup>,</span>
-              <span class="author-block">
-                <a href="https://www.ying-cao.com/">Ying Cao</a><sup>1</sup></span>
-              <span class="author-block">
+            <span class="author-block">
+                <a href="https://www.ying-cao.com/">Ying Cao</a><sup>1,†</sup></span>
+            <span class="corresponding-note"><sup>†</sup>Corresponding Author</span>
           </div>
-
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>ShanghaiTech University</span>
+          <div class="institution-logos">
+            <span><sup>1</sup><img style="height:65px" src="images/shanghaitech-logo.png" alt="ShanghaiTech University"></span>
           </div>
-
-          <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- Paper Link -->
-              <span class="link-block">
-                <a href="#"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
-              <!-- Code Link -->
-              <span class="link-block">
-                <a href="#"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code(Coming Soon)</span>
-                </a>
-              </span>
-            </div>
+          
+          <div class="publication-links">
+            <!-- Paper Link -->
+            <span class="link-block">
+              <a href="#" class="external-link button">
+                <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                </span>
+                <span>Paper</span>
+              </a>
+            </span>
+            <!-- Code Link -->
+            <span class="link-block">
+              <a href="#" class="external-link button">
+                <span class="icon">
+                    <i class="fab fa-github"></i>
+                </span>
+                <span>Code (Coming Soon)</span>
+              </a>
+            </span>
           </div>
         </div>
       </div>
@@ -105,11 +78,12 @@
 
 <!-- Teaser -->
 <section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img src="project/ordermatters/figs/teaser_v5.jpg" alt="Project Teaser" class="teaser-image">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <img src="project/ordermatters/figs/teaser_v5.jpg" alt="Project Teaser" class="teaser-image">
+<!-- <p>Comparison of graphic design sampled from our autoregressive generator trained with different approaches for ordering elements in training design sequences, including random, raster and our neural order. Our neural order shows significantly improved visual quality compared to random order and raster order, resulting in high-quality designs with favorable properties, such as rich visual contents, well-aligned elements, avoiding occlusion of important image regions, great layout variations and harmonious colors.</p> -->
+      </div>
     </div>
-  </div>
 </section>
 
 <section class="section">
@@ -117,7 +91,7 @@
     <!-- Abstract -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
+        <h2 class="title is-3 section-title">Abstract</h2>
         <div class="content has-text-justified">
           <p>
             The past few years have witnessed an emergent interest in building generative models for the graphic design domain. 
@@ -139,14 +113,78 @@
         </div>
       </div>
     </div>
+    <!-- <hr> -->
+    <!-- Method -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3 section-title">Method</h2>
+        <div class="content has-text-justified">
+          <p>
+            Given a training dataset of vector graphic designs (or rasterized
+            graphic designs with element-level annotations), we aim to order
+            the elements within each design so that the performance of a design
+            generator, trained on the reordered design data, can be maximized.
+            Instead of enforcing any heuristic rules as in existing works, we seek
+            to learn an ordering approach from graphic design data, without any
+            human annotations on element ordering. 
+          </p>
+          
+          <div class="columns">
+            <div class="column is-half">
+              <div class="content has-text-centered">
+                <img src="project/ordermatters/figs/data_repre-v2.jpg" alt="Design Representation" style="max-width: 100%; height: auto;">
+              </div>
+            </div>
+            <div class="column is-half" style="display: flex; align-items: center;">
+              <div class="content has-text-justified">
+                <p>
+                  Design representation. A graphic design is decomposed into a canvas
+                  and a set of basic element. Each element is represented as a subsequence
+                  of discrete attribute tokens, starting with either [TXT] (text) or [NTXT]
+                  (non-text) to indicate its general category. The canvas is also converted into
+                  a discrete subsequence with [CAV] at the beginning. All the subsequences
+                  are concatenated to produce a sequential representation of the design.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="content has-text-centered">
+            <img src="project/ordermatters/figs/full_pipe-v4.png" alt="GOL Framework" class="results-image">
+          </div>
+
+          <p>
+            Our framework consists of a design generator along with an ordering
+            network inside it. With designs being formatted as sequences of
+            discrete tokens, the design generator learns a generative model of
+            design sequences based on a Transformer backbone that captures
+            contextual relationships between design tokens. The ordering net-
+            work learns to permute the elements in a design according to their
+            geometric and visual properties, for training the design generator.
+            The weights of both design generator and ordering network are
+            updated simultaneously in training for mutual improvements—a
+            stronger design generator is able to provide more useful supervisory
+            signal for the ordering network while a better ordering network can
+            contribute the performance improvement of the design generator.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- <hr> -->
 
     <!-- Results -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Results</h2>
+        <h2 class="title is-3 section-title">Results</h2>
         <div class="content has-text-centered">
           <img src="project/ordermatters/figs/results-v3.jpg" alt="Visual Results" class="results-image">
         </div>
+        <p>
+        Qualitative comparison of samples generated from models trained with different orders. Training with our neural order yields noticeable improvements
+        in generation quality.
+        </p>
       </div>
     </div>
   </div>
