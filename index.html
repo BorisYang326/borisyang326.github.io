@@ -16,15 +16,16 @@
 
 
 <body data-new-gr-c-s-check-loaded="14.1080.0" data-gr-ext-installed="">
-  <table style="width:100%;max-width:1000px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tbody><tr style="padding:0px">
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
       <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tbody><tr style="padding:0px">
-            <td style="padding:2.5%;width:60%;vertical-align:middle">
-              <h1>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <p style="text-align:center">
+              <name>
                 Bo Yang
-              </h1>
+              </name>
               <p>I am a third-year Master student at <a target="_blank" href='https://www.shanghaitech.edu.cn/'>ShanghaiTech University</a>, advised by 
                 <a target="_blank" href="https://www.ying-cao.com/">Prof.Ying Cao</a>, 
                 expected to complete the degree this summer. I am actively seeking Ph.D (26 Fall) positions.
@@ -43,7 +44,7 @@
               </p>
             </td>
             <td style="display: flex; flex-direction: column; align-items: left; justify-content: center; padding: 0%;" onmouseout="real_photo_stop()" onmouseover="real_photo_start()">
-                <img id="photo" style="width:55%;max-width:95%; margin: 0rem; margin-top: 15%;" alt="profile photo" src="./images/profile.jpg">
+                <img id="photo" style="width:70%;max-width:95%; margin: 0rem; margin-top: 10%;" alt="profile photo" src="./images/casual.jpg">
             </td>
           </tr>
         </tbody></table>
@@ -51,84 +52,110 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tbody><tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>🔥 News</h2>
+              <heading>🔥 News</heading>
               <p>
-                <li style="margin-bottom: 5px;"> <strongsmall>[2025/05]</strongsmall> 1 paper were accepted by SIGGRAPH 2025 (Journal-track).</li>
+                <li style="margin-bottom: 5px;"> <strongsmall>[2025/05]</strongsmall> One paper were accepted by SIGGRAPH 2025 (Journal-track).</li>
               </p>
             </td>
           </tr>
         </tbody></table>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tbody><tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>📑 Publication</h2>
-              <p>
-                <sup>*</sup> denotes equal contribution, <sup>†</sup> denotes corresponding author, some are <span class="highlight">highlighted</span>.
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+          <td style="padding:20px;width:100%;vertical-align:middle">
+            <heading>📑 Publications</heading>
+            <p>
+              <sup>*</sup> denotes equal contribution, <sup>†</sup> denotes corresponding author, some are <span class="highlight">highlighted</span>.
+            </p>
+          </td>
+        </tr>
+      </tbody></table>
+  
+  <style> /* Year title format */
+    .year-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-left: 20px;
+    }
+  </style>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tbody>
-            <tr>
-              <td style="padding:2.5%;padding-right:0%;width:30%;vertical-align:middle;min-width:120px">
-                <img src="./project/ordermatters/figs/full_pipe-v4.png" alt="project image" style="width:auto; height:auto; max-width:120%;">
-              </td>
-              <td style="padding:2.5%;padding-left:8%;width:70%;vertical-align:middle">
-                <div style="color: cornflowerblue;"><h3>Order Matters: Learning Element Ordering for Graphic Design Generation</h3></div>
-                <div class="tags" data-tags="auto-regressive,diffusion"></div>
-                <strong>Bo Yang</strong>,
-                Ying Cao<sup>†</sup>
-                <br>
-                <em>ACM Transactions on Graphics (SIGGRAPH), 2025</em>
-                <br>
-                <a href="https://borisyang326.github.io/ordermatters.html">project page</a>
-                /
-                <a href="project/ordermatters/pdf/ordermatters_tog.pdf">paper</a>
-                <!-- <a href="#">paper</a> -->
-                <p style="max-width:100%;">
-                  Develop a unsupervised method to learn the ordering of graphic elements to improve the performance of generative models of graphic designs.
-                </p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+  <!-- <div class="year-title">2025</div> -->
+
+  <table style="width:100%;border:0px;border-spacing:0 5px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    
+    <!-- <tr bgcolor="#ffffd0"> -->
+    <tr>
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <img src="project/ordermatters/figs/data_repre-v2.jpg" alt="ordermatters-repre" width="200">
+        <p></p><img src="project/ordermatters/figs/full_pipe-v4.png" alt="ordermatters-pipeline" width="200"></p>
+      </td>
+      <!-- <td width="75%" valign="center"> -->
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <div style="color: cornflowerblue;"><papertitle>Order Matters: Learning Element Ordering for Graphic Design Generation</papertitle></div>
+        <div class="tags" data-tags="auto-regressive,diffusion"></div>
+        <strong>Bo Yang</strong>,Ying Cao<sup>†</sup>
         <br>
+        <em>ACM Transactions on Graphics (SIGGRAPH)</em>, 2025 
+        <br>
+        <a href="https://borisyang326.github.io/ordermatters.html">Project Page</a> / <a href="project/ordermatters/pdf/ordermatters_tog.pdf">Paper</a> / <a href="." class="bibtex-button">BibTeX</a>
+        <br>
+        <p> We propose a Generative Order Learner (GOL) that optimizes element ordering for graphic design generation. Our approach learns a content-aware neural order, which can significantly improve graphic generation quality, generalize across different types of generative models and help design generators scale up greatly.</p>
+      </td>
+    </tr>
+  </tbody></table>
 
+              <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0"><tbody>
+                <tr>
+                  <td>
+                    <heading>📖 Experience</heading>
+                  </td>
+                </tr>
+              </tbody></table>
+              <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+                <tr>
+                  <td>
+                    <ul>
+                      <li>University of California, Berkeley, CA: Summer School Program (2019 summer).</li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody></table>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tbody><tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>📖 Experience</h2>
-              <li>University of California, Berkeley, CA: Summer School Program (2019 summer).</li>
-            </td>
-          </tr>
-        </tbody></table>
+              <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0"><tbody>
+                <tr>
+                  <td>
+                    <heading>🖇 Service & Teaching</heading>
+                  </td>
+                </tr>
+              </tbody></table>
+              <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+                <tr>
+                  <td>
+                    <ul>
+                      <li>CS280 - Deep Learning (25S/24F/24S/23F/23S), Teaching Assistant.
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody></table>
         
-        
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tbody><tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>🖇 Service & Teaching</h2>
-              <li>CS280 - Deep Learning (25S/24F/24S/23F/23S), Teaching Assistant.
-              </li>
-            </td>
-          </tr>
-        </tbody></table>
-
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tbody><tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>🏵️ Honors</h2>
-              <li>Merit Student, ShanghaiTech University, 2022-2023.</li>
-              <li>Outstanding Teaching Assistant, ShanghaiTech University, 2023/2024.</li>
-              </li>
-            </td>
-          </tr>
-        </tbody></table>
+              <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0"><tbody>
+                <tr>
+                  <td>
+                    <heading>🏵️ Honors</heading>
+                  </td>
+                </tr>
+              </tbody></table>
+              <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+                <tr>
+                  <td>
+                    <ul>
+                      <li>Merit Student, ShanghaiTech University, 2022-2023.</li>
+                      <li>Outstanding Teaching Assistant, ShanghaiTech University, 2023/2024.</li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody></table>
         
 
       
