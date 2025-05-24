@@ -7,9 +7,9 @@
   <meta name="author" content="Bo Yang">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" type="text/css" href="./index_files/style.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
   <link rel="canonical" href="https://borisyang326.github.io/">
-  <link href="./index_files/css" rel="stylesheet" type="text/css">
+  <link href="./css/css" rel="stylesheet" type="text/css">
 
 
 
@@ -30,7 +30,9 @@
                 expected to complete the degree this summer. I am actively seeking Ph.D (26 Fall) positions.
                 I graduated from <a target="_blank" href="https://www.shanghaitech.edu.cn/eng/">ShanghaiTech University</a> with Bachelor's degree in 2022.
               </p>
-
+              <p>
+                My research interests lie at the intersection of computer graphics, computer vision, and human-computer interaction, with a particular focus on generative models. Currently, my research focuses on graphic design generation.
+              </p>
 
               <p style="text-align:center">
                 <a href="mailto:borisyang326@gmail.com"> Email</a> &nbsp;/&nbsp;
@@ -40,8 +42,8 @@
                 <!-- <a href="https://www.linkedin.com/in/xinhang-l-a36913205/"> LinkedIn </a> -->
               </p>
             </td>
-            <td style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2.5%;" onmouseout="real_photo_stop()" onmouseover="real_photo_start()">
-                <img id="photo" style="width:95%;max-width:95%; margin-top: 2rem;" alt="profile photo" src="./index_files/casual_resize.jpg">
+            <td style="display: flex; flex-direction: column; align-items: left; justify-content: center; padding: 0%;" onmouseout="real_photo_stop()" onmouseover="real_photo_start()">
+                <img id="photo" style="width:55%;max-width:95%; margin: 0rem; margin-top: 15%;" alt="profile photo" src="./images/profile.jpg">
             </td>
           </tr>
         </tbody></table>
@@ -49,7 +51,7 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tbody><tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>News</h2>
+              <h2>🔥 News</h2>
               <p>
                 <li style="margin-bottom: 5px;"> <strongsmall>[2025/05]</strongsmall> 1 paper were accepted by SIGGRAPH 2025 (Journal-track).</li>
               </p>
@@ -60,9 +62,9 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tbody><tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Research</h2>
+              <h2>📑 Publication</h2>
               <p>
-                My research interests lie at the intersection of computer graphics, computer vision, and human-computer interaction, with a particular focus on generative models. I am passionate about enhancing the controllability and interpretability of AI systems in creative tasks, especially in developing tools that can better understand and assist human designers in their creative processes. Currently, my research focuses on graphic design and layout generation, and I am excited to extend this work to broader creative domains such as cinematic content creation and interactive design tools.
+                <sup>*</sup> denotes equal contribution, <sup>†</sup> denotes corresponding author, some are <span class="highlight">highlighted</span>.
               </p>
             </td>
           </tr>
@@ -75,19 +77,19 @@
                 <img src="./project/ordermatters/figs/full_pipe-v4.png" alt="project image" style="width:auto; height:auto; max-width:120%;">
               </td>
               <td style="padding:2.5%;padding-left:8%;width:70%;vertical-align:middle">
-                <h3>Order Matters: Learning Element Ordering for Graphic Design Generation</h3>
-                <br>
+                <div style="color: cornflowerblue;"><h3>Order Matters: Learning Element Ordering for Graphic Design Generation</h3></div>
+                <div class="tags" data-tags="auto-regressive,diffusion"></div>
                 <strong>Bo Yang</strong>,
-                Ying Cao
+                Ying Cao<sup>†</sup>
                 <br>
-                <em>ACM Trans. on Graphics (Proc. ACM SIGGRAPH 2025), Aug. 2025</em>
+                <em>ACM Transactions on Graphics (SIGGRAPH), 2025</em>
                 <br>
                 <a href="https://borisyang326.github.io/ordermatters.html">project page</a>
                 /
                 <a href="project/ordermatters/pdf/ordermatters_tog.pdf">paper</a>
                 <!-- <a href="#">paper</a> -->
                 <p style="max-width:100%;">
-                  Develop a method to optimize the ordering of graphic elements to improve the performance of generative models of graphic designs.
+                  Develop a unsupervised method to learn the ordering of graphic elements to improve the performance of generative models of graphic designs.
                 </p>
               </td>
             </tr>
@@ -99,7 +101,7 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tbody><tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Experience</h2>
+              <h2>📖 Experience</h2>
               <li>University of California, Berkeley, CA: Summer School Program (2019 summer).</li>
             </td>
           </tr>
@@ -109,7 +111,7 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tbody><tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Service & Teaching</h2>
+              <h2>🖇 Service & Teaching</h2>
               <li>CS280 - Deep Learning (25S/24F/24S/23F/23S), Teaching Assistant.
               </li>
             </td>
@@ -120,7 +122,7 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tbody><tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Honors</h2>
+              <h2>🏵️ Honors</h2>
               <li>Merit Student, ShanghaiTech University, 2022-2023.</li>
               <li>Outstanding Teaching Assistant, ShanghaiTech University, 2023/2024.</li>
               </li>
@@ -152,3 +154,70 @@
 
 
 <div class="jvectormap-tip"></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
+
+<script>
+  const tagsMap = {
+    'auto-regressive': { name: 'Autoregressive Models', class: 'tag-auto-regressive' },
+    'diffusion': { name: 'Diffusion Models', class: 'tag-diffusion' },
+  };
+
+  document.querySelectorAll('.tags').forEach(tagDiv => {
+    const tagAbbreviations = tagDiv.getAttribute('data-tags').split(',');
+    tagAbbreviations.forEach(abbreviation => {
+      if (tagsMap[abbreviation]) {
+        const tagElement = document.createElement('span');
+        tagElement.classList.add('tag', tagsMap[abbreviation].class);
+        tagElement.textContent = tagsMap[abbreviation].name;
+        tagDiv.appendChild(tagElement);
+      }
+    });
+  });
+</script>
+
+<script>
+  async function loadBibTeX(bibFile) {
+    try {
+      const response = await fetch(bibFile);
+      if (response.ok) {
+        return await response.text();
+      } else {
+        return `Unable to load BibTeX file: ${bibFile}`;
+      }
+    } catch (error) {
+      return `Error loading BibTeX: ${error.message}`;
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const bibLinks = document.querySelectorAll('a[href^="data/"][href$=".bib"]');
+    
+    bibLinks.forEach(link => {
+      const bibFile = link.getAttribute('href');
+      const containerId = `bibtex-${bibFile.replace(/[\/\.]/g, '-')}`;
+      
+      const container = document.createElement('div');
+      container.id = containerId;
+      container.className = 'bibtex-container';
+      container.textContent = 'loading...';
+      
+      link.parentNode.insertBefore(container, link.nextSibling);
+      
+
+      link.className = 'bibtex-button';
+      link.innerText = 'BibTeX';
+      link.addEventListener('click', async function(e) {
+        e.preventDefault();
+        
+
+        if (container.style.display === 'block') {
+          container.style.display = 'none';
+        } else {
+          if (container.textContent === 'loading...') {
+            container.textContent = await loadBibTeX(bibFile);
+          }
+          container.style.display = 'block';
+        }
+      });
+    });
+  });
+</script>

@@ -1,156 +1,167 @@
-body {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+/* Base styles */
+a {
+  color: #1772d0;
+  text-decoration: none;
 }
 
-h2,
-h3,
-h4,
-h5,
-h6,
-.form-control,
-small {
-    font-weight: 300;
+a:focus,
+a:hover {
+  color: #f09228;
+  text-decoration: none;
 }
 
+body,
+td,
+th,
+tr,
 p,
-.form-control,
-li {
-    font-size: 0.91em
+a {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  font-display: auto;
 }
 
-#bibtex {
-    height: 10em
+strong {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  font-display: auto;
 }
 
-#paper-title h3 small {
-    color: #777;
-    font-size: 0.7em
+/* Typography */
+h1 {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: normal;
+  font-display: auto;
+  text-align: center;
+  padding: 0;
+  margin-block-start: 14px;
+  margin-block-end: 14px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
-.container>.row>img.img-responsive,
-.container>.row>div>img.img-responsive {
-    padding: 1em 0
+h2 {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 22px;
+  font-display: auto;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+  display: inline;
 }
 
-.row img.img-responsive {
-    width: 100%;
+h3 {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  font-display: auto;
+  padding: 0;
+  margin: 0;
+  display: inline;
 }
 
-#authors .list-inline-item {
-    padding: 0.5em
+/* Image styles */
+.one {
+  width: 160px;
+  height: 160px;
+  position: relative;
 }
 
-.gif-label {
-    margin: 0.3em 0;
-    font-size: 0.7em;
+.two {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -webkit-transition: opacity 0.2s ease-in-out;
 }
 
-.gif-label>div {
-    text-align: center;
-    padding: 0
+.fade {
+  transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -webkit-transition: opacity 0.2s ease-in-out;
 }
 
-#dynamic-teaser .gif-label {
-    margin: 0 -15px;
+/* Highlight */
+span.highlight {
+  background-color: #ffffd0;
 }
 
-body>.container>.row>div {
-    padding: 0 2em
+/* Tags */
+.tag {
+  display: inline-block;
+  background-color: #0073e6;
+  color: rgb(33, 32, 32);
+  padding: 3px 7px;
+  border-radius: 15px;
+  font-size: 0.8em;
+  margin-right: 5px;
 }
 
-body>.container>.row>div.grey-container {
-    background: #f2f2f2;
-    padding: 1.5em 2em
+.tag-auto-regressive {
+  background-color: #d7ffc8;
 }
 
-.row.eleven-col {
-    width: 109.0909090909%;
-    overflow: hidden
+.tag-diffusion {
+  background-color: #bde0fe;
 }
 
-.row.ten-col {
-    width: 120%;
-    overflow: hidden
+.tag-benchmark {
+  background-color: #fa799d;
 }
 
-.row.eight-col {
-    width: 150%;
-    overflow: hidden
+.tag-fl {
+  background-color: #a2d2ff;
 }
 
-.io-arrow {
-    position: relative;
-    display: block;
-    text-align: center;
+/* BibTeX styles */
+.bibtex-container {
+  display: none;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px 0;
+  font-family: monospace;
+  white-space: pre-wrap;
+  font-size: 12px;
+  overflow-x: auto;
+  max-height: 300px;
+  overflow-y: auto;
 }
 
-.io-arrow>svg {
-    position: absolute;
-    color: #555;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%)
+.bibtex-button {
+  cursor: pointer;
+  color: #1772d0;
+  text-decoration: none;
 }
 
-#demo-warning {
-    display: none;
-    color: red;
+.bibtex-button:hover {
+  text-decoration: underline;
 }
 
-
-.demo-card {
-    width: 100%;
-    height: 250px;
-    margin-bottom: 1em;
-    overflow: hidden;
-    cursor: pointer;
+/* Quote styles */
+.quote-container {
+  margin: 30px 0;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-left: 4px solid #6ba5e0;
+  border-radius: 3px;
 }
 
-.demo-card h5 a {
-    text-decoration: none;
-    color: #000
+.quote-text {
+  font-family: 'Georgia', serif;
+  font-size: 18px;
+  font-style: italic;
+  color: #333;
+  line-height: 1.6;
 }
 
-.demo-card>img {
-    width: 100%;
-    height: 160px;
-    object-fit: contain;
-    padding: 1em;
-}
-
-.demo-card .card-body {
-    padding: 1em 1.5em;
-    background: #fafafa;
-}
-
-.fullwid-vid {
-    width: 100%
-}
-
-.fullwid-centered {
-    width: 100%;
-    text-align: center
-}
-
-.col-tight {
-    padding: 0
-}
-
-@media only screen and (max-width: 992px) {
-    #teaser-one .row>div>.row {
-        padding: 0 55px
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    #teaser-one .row>div>.row {
-        padding: 0 75px
-    }
-}
-
-@media only screen and (max-width: 576px) {
-    #teaser-one .row>div>.row {
-        padding: 0 35px
-    }
+.quote-author {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  color: #666;
+  text-align: right;
+  margin-top: 10px;
 }
