@@ -164,3 +164,15 @@ hr {
     margin-top: 0.5rem;
     margin-bottom: 1rem;
 } 
+
+code {
+    font-family: Consolas,"courier new";
+    color: black;
+    background-color: #f1f1f1;
+    padding: 10px;
+    display: block;
+}
+
+.code-col {
+    width: 50%;
+}
