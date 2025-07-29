@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="description"
         content="Order Matters: Learning Element Ordering for Graphic Design Generation">
+  <link rel="icon" type="image/png" href="images/o-letter.png" />
   <meta name="keywords" content="graphic design, deep learning, generative models, transformer, neural order">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Order Matters: Learning Element Ordering for Graphic Design Generation</title>
@@ -185,24 +186,28 @@
 
   <!--BibTex citation -->
 <hr>
-<div class="columns is-centered has-text-centered">
-  <div class="column is-four-fifths">
-    <h2 class="title is-3 section-title">BibTeX</h2>
-<div class="col" class="code-col">
-  <code style="font-size: 14px; text-align: left; display: block;">
-    @article{yang2025order,<br>
-      &ensp;title={Order Matters: Learning Element Ordering for Graphic Design Generation},<br>
-      &ensp;author={Yang, Bo and Cao, Ying},<br>
-      &ensp;journal={ACM Transactions on Graphics (TOG)},<br>
-      &ensp;volume={44},<br>
-      &ensp;number={4},<br>
-      &ensp;pages={1--16},<br>
-      &ensp;year={2025},<br>
-      &ensp;publisher={ACM New York, NY, USA}<br>
-    }
-  </code>
-</div>
-</div>
+<div class="container is-max-desktop content">
+  <h2 class="title">BibTeX</h2>
+  <div class="bibtex-container">
+    <pre><button class="copy-button" onclick="copyBibTeX(event)">Copy</button><code id="bibtex-code">@article{yang2025order,
+  author = {Yang, Bo and Cao, Ying},
+  title = {Order Matters: Learning Element Ordering for Graphic Design Generation},
+  year = {2025},
+  issue_date = {August 2025},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  volume = {44},
+  number = {4},
+  issn = {0730-0301},
+  url = {https://doi.org/10.1145/3730858},
+  doi = {10.1145/3730858},
+  journal = {ACM Trans. Graph.},
+  month = jul,
+  articleno = {34},
+  numpages = {16},
+  keywords = {graphic design, design generation, generative model}
+}</code></pre>
+  </div>
 </div>
 <!--End BibTex citation -->
 
@@ -222,6 +227,138 @@
     </div>
   </div>
 </footer>
+
+<style>
+.bibtex-container {
+  margin-top: 1rem;
+}
+
+.copy-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  outline: 0;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 4px;
+  font-size: 13px;
+  height: 30px;
+  background-color: #0000000d;
+  color: #0e0e10;
+  padding: 0 20px;
+  transition: background-color 0.2s ease;
+  z-index: 10;
+}
+
+.copy-button:hover {
+  background-color: #0000001a;
+}
+
+.copy-button.copied {
+  background-color: #28a745;
+  color: white;
+}
+
+.copy-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+#bibtex-code {
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  line-height: 1.4;
+  white-space: pre;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+pre {
+  position: relative;
+  margin: 0;
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+}
+</style>
+
+<script>
+function copyBibTeX(event) {
+  const target = event.currentTarget;
+  const pre = target.closest('pre');
+  
+  if (pre === null) {
+    console.log('Code not found');
+    return;
+  }
+  
+  // Get only the code element content, not the button text
+  const codeElement = pre.querySelector('code');
+  if (codeElement === null) {
+    console.log('Code element not found');
+    return;
+  }
+  
+  const code = codeElement.textContent;
+  const originalText = target.textContent;
+  
+  // Check if the browser supports the Clipboard API
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    // Use modern Clipboard API
+    navigator.clipboard
+      .writeText(code)
+      .then(() => {
+        // Update button appearance
+        target.textContent = 'Copied!';
+        target.classList.add('copied');
+        target.disabled = true;
+        
+        // Reset button after 800ms
+        setTimeout(() => {
+          target.textContent = originalText;
+          target.classList.remove('copied');
+          target.disabled = false;
+        }, 800);
+      })
+      .catch(error => {
+        console.error('Failed to save text to clipboard:', error);
+        // Fallback to old method if Clipboard API fails
+        fallbackCopyTextToClipboard(code, target, originalText);
+      });
+  } else {
+    console.log('Clipboard API not supported, using fallback');
+    // Fallback for older browsers
+    fallbackCopyTextToClipboard(code, target, originalText);
+  }
+}
+
+function fallbackCopyTextToClipboard(text, target, originalText) {
+  const textarea = document.createElement('textarea');
+  textarea.value = text;
+  document.body.appendChild(textarea);
+  
+  textarea.select();
+  document.execCommand('copy');
+  
+  document.body.removeChild(textarea);
+  
+  // Update button appearance
+  target.textContent = 'Copied!';
+  target.classList.add('copied');
+  target.disabled = true;
+  
+  // Reset button after 800ms
+  setTimeout(() => {
+    target.textContent = originalText;
+    target.classList.remove('copied');
+    target.disabled = false;
+  }, 800);
+}
+</script>
 
 </body>
 </html>
