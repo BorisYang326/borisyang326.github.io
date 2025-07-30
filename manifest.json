@@ -1,0 +1,21 @@
+{
+    "name": "Bo Yang - Personal Website",
+    "short_name": "Bo Yang",
+    "description": "Bo Yang's personal academic website",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "icons": [
+        {
+            "src": "images/nirvana-logo-1991.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "images/nirvana-logo-1991.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
