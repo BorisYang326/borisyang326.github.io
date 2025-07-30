@@ -30,13 +30,13 @@
       <td style="padding:0px">
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
+            <td style="padding:2.5%;width:60%;vertical-align:middle">
               <p style="text-align:center">
               <name>
                 Bo Yang
               </name>
               <p>I am a third-year Master student at <a target="_blank" href='https://www.shanghaitech.edu.cn/'>ShanghaiTech University</a>, advised by 
-                <a target="_blank" href="https://www.ying-cao.com/">Prof.Ying Cao</a>, 
+                Prof. <a target="_blank" href="https://www.ying-cao.com/">Ying Cao</a>, 
                 expected to complete the degree this summer.
                 I graduated from <a target="_blank" href="https://www.shanghaitech.edu.cn/eng/">ShanghaiTech University</a> with Bachelor's degree in 2022.
               </p>
@@ -87,6 +87,101 @@
       font-size: 18px;
       font-weight: bold;
       margin-left: 20px;
+    }
+    
+    /* Responsive design for mobile devices */
+    @media screen and (max-width: 768px) {
+      /* Profile section responsive layout */
+      table[style*="width:100%"] tr {
+        display: block;
+      }
+      
+      table[style*="width:100%"] td {
+        display: block;
+        width: 100% !important;
+        padding: 2.5% !important;
+      }
+      
+      /* Center the profile photo on mobile */
+      td[style*="display: flex"] {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        padding: 2.5% !important;
+      }
+      
+      #photo {
+        width: 80% !important;
+        max-width: 200px !important;
+        margin: 0 auto !important;
+      }
+      
+      /* Adjust table layout for mobile */
+      table[width="100%"] {
+        font-size: 14px;
+      }
+      
+      /* Make education/experience images smaller on mobile */
+      img[style*="max-width: 80px"] {
+        max-width: 60px !important;
+      }
+      
+      img[style*="max-width: 50px"] {
+        max-width: 40px !important;
+      }
+      
+      /* Adjust column widths for mobile */
+      col[style*="width: 10%"] {
+        width: 15% !important;
+      }
+      
+      col[style*="width: 70%"] {
+        width: 65% !important;
+      }
+      
+      col[style*="width: 20%"] {
+        width: 20% !important;
+      }
+      
+      /* Reduce padding on mobile */
+      td[style*="padding: 2%"] {
+        padding: 1% !important;
+      }
+      
+      /* Adjust publication layout for mobile */
+      col[style*="width: 50%"] {
+        width: 100% !important;
+      }
+      
+      /* Stack publication images on mobile */
+      @media screen and (max-width: 768px) {
+        table[width="100%"][align="left"] tr {
+          display: block;
+        }
+        
+        table[width="100%"][align="left"] td {
+          display: block;
+          width: 100% !important;
+          text-align: center;
+        }
+        
+        table[width="100%"][align="left"] td:first-child {
+          margin-bottom: 10px;
+        }
+      }
+    }
+    
+    /* Extra small screens */
+    @media screen and (max-width: 480px) {
+      #photo {
+        width: 90% !important;
+        max-width: 150px !important;
+      }
+      
+      /* Make text smaller on very small screens */
+      table[width="100%"] {
+        font-size: 12px;
+      }
     }
   </style>
 
