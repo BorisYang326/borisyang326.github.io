@@ -81,15 +81,15 @@ span.highlight {
 }
 
 .tag-auto-regressive {
-  background-color: #d7ffc8;
-}
-
-.tag-diffusion {
   background-color: #bde0fe;
 }
 
-.tag-benchmark {
-  background-color: #fa799d;
+.tag-diffusion {
+  background-color: #FFB4B4;
+}
+
+.tag-design-generation {
+  background-color: #d7ffc8;
 }
 
 .tag-fl {
