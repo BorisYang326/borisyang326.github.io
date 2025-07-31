@@ -4,34 +4,46 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-
+<!-- Main pages -->
 <url>
   <loc>https://borisyang326.github.io/</loc>
-  <lastmod>2025-05-08T13:57:52+00:00</lastmod>
+  <lastmod>2025-07-15T00:00:00+00:00</lastmod>
   <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://borisyang326.github.io/resume/raw/BoYang_CV.pdf</loc>
-  <lastmod>2025-05-08T13:57:52+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://borisyang326.github.io/ordermatters.html</loc>
-  <lastmod>2025-05-08T13:57:52+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://borisyang326.github.io/project/ordermatters/pdf/ordermatters_tog.pdf</loc>
-  <lastmod>2025-05-08T13:57:52+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://borisyang326.github.io/project/ordermatters/pdf/ordermatters_suppl_tog.pdf</loc>
-  <lastmod>2025-05-08T13:57:52+00:00</lastmod>
-  <priority>0.64</priority>
+  <changefreq>monthly</changefreq>
 </url>
 
+<!-- Publication pages -->
+<url>
+  <loc>https://borisyang326.github.io/ordermatters.html</loc>
+  <lastmod>2025-07-15T00:00:00+00:00</lastmod>
+  <priority>0.90</priority>
+  <changefreq>monthly</changefreq>
+</url>
+
+
+
+<!-- PDF files -->
+<url>
+  <loc>https://borisyang326.github.io/project/ordermatters/pdf/ordermatters_tog.pdf</loc>
+  <lastmod>2025-07-15T00:00:00+00:00</lastmod>
+  <priority>0.85</priority>
+  <changefreq>yearly</changefreq>
+</url>
+
+<url>
+  <loc>https://borisyang326.github.io/project/ordermatters/pdf/ordermatters_suppl_tog.pdf</loc>
+  <lastmod>2025-07-15T00:00:00+00:00</lastmod>
+  <priority>0.75</priority>
+  <changefreq>yearly</changefreq>
+</url>
+
+<!-- Resume/CV -->
+<url>
+  <loc>https://borisyang326.github.io/resume/raw/BoYang_CV.pdf</loc>
+  <lastmod>2025-07-15T00:00:00+00:00</lastmod>
+  <priority>0.70</priority>
+  <changefreq>monthly</changefreq>
+</url>
 
 </urlset>
