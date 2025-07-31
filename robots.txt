@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://borisyang326.github.io/sitemap.xml
+
+# Allow crawling of all content
+Allow: /project/
+Allow: /resume/
+Disallow: /images/
+Disallow: /assets/
+Disallow: /css/
+Allow: /data/
+
+# Specific rules for PDFs
+Allow: /*.pdf
+
+# Crawl delay (optional, helps with server load)
+Crawl-delay: 1 
