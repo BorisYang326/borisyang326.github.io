@@ -84,6 +84,18 @@
       font-weight: bold;
       margin-left: 20px;
     }
+    /* Visitor map styling */
+    #mapmyvisitors-container {
+      width: 100%;
+      max-width: 600px;
+      margin: 20px auto;
+      overflow: hidden;
+    }
+    #mapmyvisitors-container iframe,
+    #mapmyvisitors-container > div {
+      max-width: 100%;
+      height: auto;
+    }
   </style>
 
   <!-- <div class="year-title">2025</div> -->
@@ -258,8 +270,6 @@
                 </tr>
               </tbody></table>
         
-
-      
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tbody><tr>
             <td style="padding:0px">
@@ -277,6 +287,11 @@
                 <!-- <span id="busuanzi_container_site_pv"># Views: <span id="busuanzi_value_site_pv"></span>(Since July, 2025)</span> -->
                 # Views: <span id="vercount_value_site_pv"></span>(Since July, 2025)
               </p>
+              <div style="text-align:center; margin: 20px auto; max-width: 600px; width: 100%;">
+                <div id="mapmyvisitors-container" style="width: 100%; max-width: 600px; margin: 0 auto; overflow: hidden; min-height: 200px;">
+                  <script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=080808&w=a&t=tt&d=aB364ORWbBMcZc4gmOU4MBRPyIP7ASjxvXSw9OLNC3g&co=ffffff&cmo=3acc3a&cmn=ff5353&ct=808080'></script>
+                </div>
+              </div>
             </td>
           </tr>
         </tbody></table>
