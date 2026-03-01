@@ -43,6 +43,20 @@ name {
   font-size: 32px;
 }
 
+.name-boris {
+  font-family: 'Noto Serif SC', 'Source Han Serif SC', 'Source Han Serif CN', 'Times New Roman', serif;
+  color: #c0c0c0;
+  font-size: 0.82em;
+  font-weight: 600;
+}
+
+.name-cn {
+  font-family: 'Noto Serif SC', 'Source Han Serif SC', 'Source Han Serif CN', 'Songti SC', 'STSong', 'SimSun', serif;
+  color: #000000;
+  font-size: 0.82em;
+  font-weight: 600;
+}
+
 /* Image styles */
 .one {
   width: 160px;
@@ -90,6 +104,22 @@ span.highlight {
 
 .tag-design-generation {
   background-color: #d7ffc8;
+}
+
+.tag-reward-model {
+  background-color: #f7c6cf;
+}
+
+.tag-image-generation {
+  background-color: #d6e6ff;
+}
+
+.tag-unified-multimodal-model {
+  background-color: #ffe5b8;
+}
+
+.tag-visual-cot {
+  background-color: #e0d7ff;
 }
 
 .tag-fl {
