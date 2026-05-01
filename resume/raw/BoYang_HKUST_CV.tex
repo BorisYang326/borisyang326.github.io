@@ -1,0 +1,285 @@
+%-------------------------
+% Academic CV in the style of resume/raw/cv_merged.tex
+% Compile with XeLaTeX.
+%------------------------
+
+\documentclass[letterpaper,12pt]{article}
+
+\usepackage{array}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+\usepackage{fontspec}
+\usepackage{xeCJK}
+
+%----------FONT OPTIONS----------
+\IfFontExistsTF{TeX Gyre Termes}{\setmainfont{TeX Gyre Termes}}{\setmainfont{Times New Roman}}
+
+% Chinese font preference requested for this CV.
+\IfFontExistsTF{Source Han Serif SC}{%
+  \setCJKmainfont{Source Han Serif SC}
+  \IfFontExistsTF{Source Han Serif CN}{%
+    \setCJKfallbackfamilyfont{\CJKrmdefault}{Source Han Serif CN}
+  }{}%
+}{%
+  \IfFontExistsTF{Source Han Serif CN}{%
+    \setCJKmainfont{Source Han Serif CN}
+  }{%
+    \IfFontExistsTF{Songti SC}{%
+      \setCJKmainfont{Songti SC}
+    }{%
+      \IfFontExistsTF{Noto Serif CJK SC}{%
+        \setCJKmainfont{Noto Serif CJK SC}
+      }{}%
+    }%
+  }%
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{4.5pt}
+
+% Adjust margins to match the source template.
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\large
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands from the source template
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      #3 & #4 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeScholarship}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\texturl}[2]{\href{#1}{\textcolor{blue}{#2}}}
+\definecolor{mygray}{gray}{0.96}
+\newcommand{\TLDR}[1]{{\footnotesize \colorbox{mygray}{#1}}}
+\newcommand{\faFilePdfO}{\faFilePdf}
+\newcommand{\faExternalLinkIcon}{\faIcon{external-link-alt}}
+
+\definecolor{pubred}{RGB}{210,80,80}
+\newcommand{\pub}[1]{\textbf{\textcolor{pubred}{#1}}}
+
+\newcommand{\me}{\textbf{\underline{Bo Yang}}}
+\newcommand{\meCo}{\textbf{\underline{Bo Yang*}}}
+\newcommand{\chinesename}{{\fontsize{18}{22}\selectfont 「杨博」}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{center}
+    \textbf{\LARGE \MakeUppercase{Bo Yang}\chinesename} \vspace{4pt} \\ \vspace{4pt}
+    \small
+    \href{mailto:byangbf@connect.ust.hk}{\raisebox{-0.2\height}\faEnvelope\ \underline{byangbf@connect.ust.hk}}
+    \hspace{8pt}
+    \href{https://borisyang326.github.io/}{\raisebox{-0.2\height}\faHome\ \underline{https://borisyang326.github.io/}}
+    \hspace{8pt}
+    \href{https://github.com/BorisYang326}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/BorisYang326}}
+    \\ \vspace{2pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {The Hong Kong University of Science and Technology}{Hong Kong, China}
+      {\textit{Ph.D. Student in Arts and Machine Creativity}}{\textit{Jan. 2026 -- Present}}
+    \begin{itemize}[leftmargin=0.15in, label={}]
+        \small{\item{
+         Co-supervised by Prof. \textit{\texturl{https://whluo.github.io/}{Wenhan Luo}} and Prof. \textit{\texturl{https://hongbofu.people.ust.hk/}{Hongbo Fu}}
+         }}
+     \end{itemize}
+     \vspace{-0.5em}
+
+    \resumeSubheading
+      {ShanghaiTech University}{Shanghai, China}
+      {\textit{Master of Science in Computer Science}}{\textit{Sept. 2022 -- Aug. 2025}}
+    \begin{itemize}[leftmargin=0.15in, label={}]
+        \small{\item{
+         Advisor: Prof. \textit{\texturl{https://www.ying-cao.com/}{Ying Cao}}, \textbf{GPA}: 3.82/4.0
+         }}
+     \end{itemize}
+     \vspace{-0.5em}
+
+    \resumeSubheading
+      {University of California, Berkeley}{Berkeley, California, US}
+      {\textit{ShanghaiTech-UC Berkeley Summer School Exchange Program}}{\textit{Jul. 2019 -- Aug. 2019}}
+    \begin{itemize}[leftmargin=0.15in, label={}]
+        \small{\item{
+         \textbf{GPA}: 4.0/4.0
+         }}
+     \end{itemize}
+     \vspace{-0.5em}
+
+    \resumeSubheading
+      {ShanghaiTech University}{Shanghai, China}
+      {\textit{Bachelor of Science in Computer Science}}{\textit{Sept. 2018 -- Jun. 2022}}
+    \begin{itemize}[leftmargin=0.15in, label={}]
+        \small{\item{
+         \textbf{GPA}: 3.32/4.0
+         }}
+     \end{itemize}
+  \resumeSubHeadingListEnd
+
+
+%-----------RESEARCH INTEREST-----------
+\section{Research Interest}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    Creative Content (Image / Graphic Design) Generation, Unified Multimodal Models, Visual CoT
+    }}
+\end{itemize}
+
+
+%-----------PUBLICATIONS-----------
+\section{Publications}
+\begin{enumerate}[leftmargin=0.35in, label={[\arabic*].}]
+    \item{
+     \textbf{Beyond VLM-Based Rewards: Diffusion-Native Latent Reward Modeling}
+     \quad{\href{https://arxiv.org/abs/2602.11146}{\faFilePdfO}}
+     \quad{\href{https://github.com/HKUST-C4G/diffusion-rm}{\faGithub}}
+     \\
+     Gongye Liu, \me, Yida Zhi, Zhizhou Zhong, Lei Ke, Didan Deng, Han Gao, Yongxiang Huang, Kaihao Zhang, Hongbo Fu, Wenhan Luo \\
+     \textit{Accepted by \pub{ICML 2026}} \\
+     \TLDR{Diffusion-native reward modeling for image generation evaluation.}
+     }
+
+    \item{
+     \textbf{Harnessing Layered Graphic Designs with Real Intentions for Text-to-Design Generation}
+     \quad{\href{https://songxyjoy.github.io/LADEREIN/}{\faExternalLinkIcon}}
+     \\
+     Xinya Song, \me, Ying Cao \\
+     \textit{Accepted by \pub{CVPR 2026 (findings track)}} \\
+     \TLDR{Layered design benchmark with real complex intentions, learned alignment metric, and diffusion baseline for text-to-design.}
+     }
+
+     \item{
+     \textbf{Order Matters: Learning Element Ordering for Graphic Design Generation}
+     \quad{\href{https://borisyang326.github.io/ordermatters.html}{\faExternalLinkIcon}}
+     \quad{\href{https://dl.acm.org/doi/10.1145/3730858}{\faFilePdfO}}
+     \quad{\href{https://github.com/BorisYang326/OrderGOL}{\faGithub}}
+     \\
+     \me, Ying Cao\\
+     \textit{Accepted by \pub{ACM Transactions on Graphics (SIGGRAPH 2025)}} \\
+     \TLDR{An unsupervised content-adaptive neural ordering framework learns better element sequences for graphic design generation.}
+     }
+\end{enumerate}
+
+
+%-----------RESEARCH PROJECTS-----------
+\section{Research Projects}
+\begin{enumerate}[leftmargin=0.35in, label={[\arabic*].}]
+    \item{
+     \textbf{CoRT: Latent Reflective Chain-of-Thought for Text-to-Image Generation} \\
+     \textbf{[Co-first author]}, In Progress \\
+     \TLDR{Text-to-image generation via latent multi-turn self-reflection in unified generation-understanding models.}
+     }
+
+    \item{
+     \textbf{Learning Cross-Modal Interaction for Joint Image-Layout Template Generation} \\
+     \textbf{[Second author]}, ECCV 2026 (Under Review) \\
+     \TLDR{Joint image-layout diffusion with learned backbone communication for faster, more faithful design template generation.}
+     }
+\end{enumerate}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {\href{https://c4g-hkust.github.io/}{C4 Group}, HKUST}{Hong Kong, China}
+      {\textit{Research Assistant, supervised by Prof. \texturl{https://whluo.github.io/}{Wenhan Luo}}}{\textit{Aug. 2025 -- Jan. 2026}}
+      \resumeItemListStart
+        \resumeItem{Worked on projects about visual latent CoT and multi-modal generation.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Shanghai BnZ Animation Studio}{Shanghai, China}
+      {\textit{Co-founder}}{\textit{Sept. 2022 -- Jan. 2025}}
+      \resumeItemListStart
+        \resumeItem{Founded a studio dedicated to scientific visualization through graphic design, animations, and videos.}
+        \resumeItem{Designed over 50 animations and videos for research entities such as \texturl{https://www.microsate.com/}{IAMCAS} and \texturl{https://pubs.acs.org/journal/amrcda}{the Journal of AMR}.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {VRVC-Lab, ShanghaiTech University}{Shanghai, China}
+      {\textit{Research Intern, supervised by Prof. \texturl{http://www.yu-jingyi.com/}{Jingyi Yu} and Prof. \texturl{https://www.xu-lan.com/}{Lan Xu}}}{\textit{Jan. 2022 -- Sept. 2022}}
+      \resumeItemListStart
+        \resumeItem{Contributed to two papers for SIGGRAPH 2022 and SIGGRAPH Asia 2022, designing paper figures and producing demonstration videos.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------AWARDS-----------
+\section{Awards}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \resumeScholarship{\textit{\textbf{Excellent Graduate}}, ShanghaiTech University}{\textit{Aug. 2025}}
+    \resumeScholarship{\textit{\textbf{Outstanding Teaching Assistant}} in SIST, ShanghaiTech University}{\textit{Nov. 2023 / Nov. 2024}}
+    \resumeScholarship{\textit{\textbf{Merit Student}} of ShanghaiTech University (\textbf{top 10\%})}{\textit{Dec. 2023}}
+    \resumeScholarship{\textit{\textbf{Overseas Exchange Scholarship}}, ShanghaiTech University}{\textit{May 2019}}
+\end{itemize}
+
+
+%-------------------------------------------
+\end{document}
